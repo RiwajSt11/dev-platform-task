@@ -30,14 +30,14 @@ function Landing() {
     <>
       <div className="w-screen h-screen">
         <NavbarForLogin />
-        <div className="  py-22  h-full">
+        <div className="  py-20  h-full">
           {/* hereo */}
           <section className="pl-23.5 pr-15.5 hero flex flex-row  justify-between  w-full h-full">
             <div className=" left  flex flex-col  ">
               <div className="flex flex-col gap-8 pb-10  ">
-                <div className="pl-1 topText flex flex-col item-center font-medium text-primary text-[69px] leading-20  ">
+                <div className="pl-1 topText flex flex-col item-center font-semibold text-primary text-[63px] leading-19  ">
                   <p>Share Knowledge,</p>
-                  <p className=" text-[66.5px] font-bold text-black">
+                  <p className=" text-[63px] font-bold text-black">
                     Grow Together
                   </p>
                 </div>
