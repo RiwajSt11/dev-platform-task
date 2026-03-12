@@ -4,6 +4,7 @@ import { Register } from "./pages/authentication/Register";
 import Landing from "./pages/Landing";
 import { Home } from "./pages/Home";
 import { ISA } from "./pages/ISA";
+import ResourcesLanding from "./pages/ResourcesLanding";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
             path="/home/internet-software-architecture"
             element={<ISA />}
           />
+          <Route path="/Resources" element={<ResourcesLanding />} />
         </Routes>
       </BrowserRouter>
     </>
