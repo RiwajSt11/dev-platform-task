@@ -7,7 +7,7 @@ function HeroSection() {
     <section className="pl-23.5 pr-19.5 hero flex flex-row justify-between  w-full h-full">
       <div className=" left  flex flex-col  w-[595px]  ">
         <div className="flex flex-col gap-7 pb-10  ">
-          <div className="pl-1 topText flex flex-col item-center font-semibold text-primary text-[61px] leading-20  ">
+          <div className="pl-1 tracking-wide topText flex flex-col item-center font-semibold text-primary text-[61px] leading-20  ">
             <p>Share Knowledge,</p>
             <p className=" text-[63px] font-bold text-black">Grow Together</p>
           </div>
