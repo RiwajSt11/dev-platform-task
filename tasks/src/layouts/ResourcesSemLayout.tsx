@@ -1,79 +1,87 @@
-import { ResourcesCard } from "../../layouts/ResourcesCard";
-import img1 from "../../assets/Resources/Landing/previousModuleImages/img1.svg";
-import img2 from "../../assets/Resources/Landing/previousModuleImages/img2.svg";
-import img3 from "../../assets/Resources/Landing/previousModuleImages/img3.svg";
-import img4 from "../../assets/Resources/Landing/previousModuleImages/img4.svg";
-import img5 from "../../assets/Resources/Landing/previousModuleImages/img5.svg";
-import img6 from "../../assets/Resources/Landing/previousModuleImages/img6.svg";
-import img7 from "../../assets/Resources/Landing/previousModuleImages/img7.svg";
-import img8 from "../../assets/Resources/Landing/previousModuleImages/img8.svg";
-import img9 from "../../assets/Resources/Landing/previousModuleImages/img9.svg";
+import { ResourcesCard } from "./ResourcesCard";
+import img1 from "../assets/Resources/Landing/previousModuleImages/img1.svg";
+import img2 from "../assets/Resources/Landing/previousModuleImages/img2.svg";
+import img3 from "../assets/Resources/Landing/previousModuleImages/img3.svg";
+import img4 from "../assets/Resources/Landing/previousModuleImages/img4.svg";
+import img5 from "../assets/Resources/Landing/previousModuleImages/img5.svg";
+import img6 from "../assets/Resources/Landing/previousModuleImages/img6.svg";
+import img7 from "../assets/Resources/Landing/previousModuleImages/img7.svg";
+import img8 from "../assets/Resources/Landing/previousModuleImages/img8.svg";
+import img9 from "../assets/Resources/Landing/previousModuleImages/img9.svg";
 
 interface Props {
   search: string;
   level: number;
+  sem: number;
 }
 
-export const PreviousModulesLayout = ({ search, level }: Props) => {
+export const ResourcesSemLayout = ({ search, level, sem }: Props) => {
   const cardInfo = [
     {
       title: "Introductory Programming And Problem Solving",
       module: "4CS001",
       level: 4,
+      sem: 1,
       description:
         "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
-      time: "Week 12 (Complete)",
+      time: "Week 4",
       image: img1,
     },
     {
       title: "Internet Software Architecutre",
       module: "4CS017",
       level: 4,
+      sem: 1,
       description:
         "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
-      time: "Week 12 (Complete)",
+      time: "Week 4",
       image: img2,
     },
     {
       title: "Fundamental of Computing",
       module: "4CS015",
       level: 4,
+      sem: 1,
       description:
         "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
-      time: "Week 12 (Complete)",
+      time: "Week 4",
       image: img3,
     },
     {
       title: "Object-Oriented Programming",
       module: "4CS021",
       level: 4,
+      sem: 2,
       description:
         "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
-      time: "Completed",
+      time: "Week 4",
       image: img4,
     },
     {
       title: "Games Technology for Serious Application",
       module: "4CS020",
       level: 4,
+      sem: 2,
       description:
         "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
-      time: "Completed",
+      time: "Week 4",
       image: img5,
     },
     {
       title: "Computational Mathematics",
       module: "4MM013",
       level: 4,
+      sem: 2,
       description:
         "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
-      time: "Completed",
+      time: "Week 4",
       image: img6,
     },
     {
       title: "Object Oriented Design and Programming",
       module: "4CS019",
       level: 5,
+      sem: 1,
       description:
         "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
       time: "Week 4",
@@ -83,6 +91,7 @@ export const PreviousModulesLayout = ({ search, level }: Props) => {
       title: "Numerical Methods and Concurrency",
       module: "4CS021",
       level: 5,
+      sem: 1,
       description:
         "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
       time: "Week 4",
@@ -92,15 +101,46 @@ export const PreviousModulesLayout = ({ search, level }: Props) => {
       title: "Concept and Technologies of AI",
       module: "4CS037",
       level: 5,
+      sem: 1,
       description:
         "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
       time: "Week 4",
       image: img9,
     },
+    {
+      title: "Distributed and Cloud Systems Programming",
+      module: "5CS022",
+      level: 5,
+      sem: 2,
+      description:
+        "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
+      time: "2 days ago",
+      image: img3,
+    },
+    {
+      title: "Collaborative Development",
+      module: "5CS024",
+      level: 5,
+      sem: 2,
+      description:
+        "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
+      time: "16 hours ago",
+      image: img2,
+    },
+    {
+      title: "Human Computer Interaction",
+      module: "5CS020",
+      level: 5,
+      sem: 2,
+      description:
+        "In this module, you will learn how to program, using the programming language Python. You will then apply what you have learn to solve problems.",
+      time: "2 hours ago",
+      image: img1,
+    },
   ];
 
   const filteredCards = cardInfo
-    .filter((card) => level === card.level)
+    .filter((card) => level === card.level && sem === card.sem)
     .filter(
       (card) =>
         card.title.toLowerCase().includes(search.toLowerCase()) ||

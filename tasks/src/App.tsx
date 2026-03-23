@@ -9,6 +9,7 @@ import { ISAWeek3 } from "./pages/isa/ISAWeek3";
 import { ExtraLearning } from "./pages/ExtraLearning";
 import { SubmitResource } from "./pages/SubmitResource";
 import ResourcesLanding from "./pages/ResourcesLanding";
+import { Resources } from "./pages/Resources";
 function App() {
   return (
     <>
@@ -32,7 +33,8 @@ function App() {
           />
           <Route path="/extra-learning" element={<ExtraLearning />} />
           <Route path="/submit-resource" element={<SubmitResource />} />
-          <Route path="/resources" element={<ResourcesLanding />} />
+          <Route path="/resources-home" element={<ResourcesLanding />} />
+          <Route path="/resources" element={<Resources />} />
         </Routes>
       </BrowserRouter>
     </>

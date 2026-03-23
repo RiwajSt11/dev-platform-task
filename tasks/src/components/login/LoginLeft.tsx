@@ -1,18 +1,50 @@
+import { useState } from "react";
 import microsoftAuthenticator from "../../assets/loginPage/microsoft-authenticator.png";
 import { EmailLayout } from "../../layouts/EmailLayout";
 import { InputLayoutLogin } from "../../layouts/InputLayoutLogin";
 import { PasswordLayout } from "../../layouts/PasswordLayout";
 import { Link } from "react-router-dom";
+import { loginUser } from "../../api/authServices";
 
 export const LoginLeft = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      console.log(formData);
+      const data = await loginUser(formData);
+      console.log(data);
+      alert("Login successfull");
+    } catch (error: any) {
+      console.error(error.response?.data?.message);
+    }
+  };
   return (
     <div className="flex flex-col w-100 h-full">
       <div className="mb-8">
         <h1 className="text-[40px] font-semibold">Welcome back!</h1>
       </div>
-      <form className="flex flex-col items-start gap-4 mb-4">
-        <EmailLayout inputLayout={InputLayoutLogin} />
-        <PasswordLayout style1="w-[94%] px-5" style2="py-4.25" />
+      <form
+        className="flex flex-col items-start gap-4 mb-4"
+        onSubmit={handleSubmit}
+      >
+        <EmailLayout inputLayout={InputLayoutLogin} onChange={handleChange} />
+        <PasswordLayout
+          style1="w-[94%] px-5"
+          style2="py-4.25"
+          name="password"
+          onChange={handleChange}
+        />
         <div className="flex flex-row justify-between w-full">
           <label className="flex items-center cursor-pointer group">
             <div className="relative">
