@@ -25,7 +25,7 @@ export const Resources = () => {
   return (
     <>
       <NavbarResources handleScrollToSearch={handleScrollToSearch} />
-      <main className="px-37.25 mt-36.5 min-h-screen">
+      <main className="px-8 md:px-37.25 mt-35 md:mt-36.5 min-h-screen">
         <ResourcesSemSection
           searchRef={searchRef}
           inputRef={inputRef}
@@ -34,7 +34,7 @@ export const Resources = () => {
           setSearch={setSearch}
           searchDiv={true}
         />
-        <div className="mt-28.5 pl-1">
+        <div className="mt-18 md:mt-28.5 pl-1">
           <ResourcesSemSection
             level={5}
             searchDiv={false}
@@ -43,7 +43,7 @@ export const Resources = () => {
           />
         </div>
       </main>
-      <footer className="mt-45">
+      <footer className="mt-20 md:mt-45">
         <ResourcesFooter />
       </footer>
     </>

@@ -19,12 +19,12 @@ export const ResourcesCard = ({
   time,
 }: Props) => {
   return (
-    <div className="rounded-xl w-100 h-108.75 px-7.25 py-4.25 flex flex-col items-center shadow-[0px_0px_10px_rgba(0,0,0,0.28)] group cursor-pointer">
-      <div className="relative h-52 w-89 rounded-lg overflow-hidden">
+    <div className="rounded-xl w-[95%] md:w-100 h-108.75 md:h-108.75 px-7.25 py-4.25 flex flex-col items-center shadow-[0px_0px_10px_rgba(0,0,0,0.28)] group cursor-pointer">
+      <div className="relative h-42 md:h-52 w-full md:w-89 rounded-lg overflow-hidden">
         <img
           src={image}
           alt="image"
-          className="transition-transform duration-500 ease-in-out group-hover:scale-120"
+          className="w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-120"
         />
         <div
           className="absolute inset-0 flex flex-col items-center gap-18.5 
