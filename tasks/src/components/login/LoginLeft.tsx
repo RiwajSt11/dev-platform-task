@@ -104,6 +104,7 @@ export const LoginLeft = () => {
           </Link>
         </p>
       </div>
+      <p>hello testing</p>
     </div>
   );
 };
