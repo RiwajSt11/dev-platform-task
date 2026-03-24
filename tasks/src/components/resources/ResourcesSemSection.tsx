@@ -1,5 +1,6 @@
 import { ResourcesSemLayout } from "../../layouts/ResourcesSemLayout";
 import searchImg from "../../assets/Resources/Landing/search.svg";
+import { Carousel } from "./Carousel";
 
 interface Props {
   searchRef?: React.RefObject<HTMLDivElement | null>;
@@ -56,21 +57,21 @@ export const ResourcesSemSection = ({
         )}
       </div>
 
-      <div className="flex flex-col items-center md:items-start">
+      <div className="flex flex-col items-center md:items-start w-full min-w-0">
         <h3 className="text-primary mt-10.5 text-[23px] tracking-tight scale-y-80 origin-top px-3">
           1st Semester
         </h3>
-        <div className="mt-2.25 grid grid-cols-1 md:grid-cols-3 gap-4.5 px-1">
+        <Carousel>
           <ResourcesSemLayout search={search} level={level} sem={1} />
-        </div>
+        </Carousel>
       </div>
-      <div className="flex flex-col items-center md:items-start">
+      <div className="flex flex-col items-center md:items-start w-full min-w-0">
         <h3 className="text-primary mt-9 text-[23px] tracking-tight scale-y-80 origin-top px-3">
           2nd Semester
         </h3>
-        <div className="mt-1.25 grid grid-cols-1 md:grid-cols-3 gap-4.5 px-1">
+        <Carousel>
           <ResourcesSemLayout search={search} level={level} sem={2} />
-        </div>
+        </Carousel>
       </div>
     </div>
   );

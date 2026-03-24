@@ -150,15 +150,19 @@ export const ResourcesSemLayout = ({ search, level, sem }: Props) => {
     <>
       {filteredCards.length > 0 ? (
         filteredCards.map((card, index) => (
-          <ResourcesCard
+          <div
             key={index}
-            title={card.title}
-            module={card.module}
-            level={card.level}
-            description={card.description}
-            time={card.time}
-            image={card.image}
-          />
+            className="snap-center shrink-0 w-[85%] sm:w-[350px] lg:w-auto flex justify-center"
+          >
+            <ResourcesCard
+              title={card.title}
+              module={card.module}
+              level={card.level}
+              description={card.description}
+              time={card.time}
+              image={card.image}
+            />
+          </div>
         ))
       ) : (
         <div className="w-[1250px] mt-15 flex items-center justify-center text-xl text-black/60">

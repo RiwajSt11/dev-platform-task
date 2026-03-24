@@ -49,7 +49,7 @@ export const NavbarResources = ({ handleScrollToSearch }: Props) => {
         <div className="flex items-center">
           <button
             type="button"
-            className="px-3.25 py-2.25 bg-primary text-white rounded-lg text-[10px] md:text-[13px] mr-2.5 cursor-pointer"
+            className="hidden md:flex px-3.25 py-2.25 bg-primary text-white rounded-lg text-[10px] md:text-[13px] mr-2.5 cursor-pointer"
           >
             Request Resources
           </button>
