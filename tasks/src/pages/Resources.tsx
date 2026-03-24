@@ -25,7 +25,7 @@ export const Resources = () => {
   return (
     <>
       <NavbarResources handleScrollToSearch={handleScrollToSearch} />
-      <main className="px-37.25 mt-35 min-h-screen">
+      <main className="px-37.25 mt-36.5 min-h-screen">
         <ResourcesSemSection
           searchRef={searchRef}
           inputRef={inputRef}
