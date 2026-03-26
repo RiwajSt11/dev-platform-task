@@ -4,7 +4,7 @@ import hck_logo from "../assets/landingPage/hck_core_logo.svg";
 export const NavbarForLogin = () => {
   return (
     <>
-      <div className="border-b-[0.7px] border-[#6868681d] flex items-center justify-between py-3.25 px-20 pl-23.75">
+      <div className="border-b-[0.7px] border-[#6868681d] flex items-center justify-between py-3.25 pl-23.5 pr-24">
         <div>
           <Link to="/">
             <img className="w-16.75 h-18" src={hck_logo} alt="hck_logo" />

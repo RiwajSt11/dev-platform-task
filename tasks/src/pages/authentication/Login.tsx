@@ -1,6 +1,7 @@
-import { NavbarForLogin } from "../NavbarForLogin";
+
 import { LoginLeft } from "../../components/login/LoginLeft";
 import { LoginRight } from "../../components/login/LoginRight";
+import { NavbarForLogin } from "../../layouts/NavbarForLogin";
 
 export const Login = () => {
   return (

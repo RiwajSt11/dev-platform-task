@@ -10,7 +10,8 @@ import utube from "../../assets/landingPage/ContactUs/utube.svg";
 
 function ContactUs() {
   return (
-    <div className="ml-28 mr-15.5 py-22.5 flex flex-col gap-13 h-screen border-b-2">
+    <div className="ml-28 mr-15.5 py-22.5 flex flex-col gap-13 ">
+      
       <img src={hckLog} alt="" width={"210px"} />
       <div className="flex flex-row justify-between">
         <div className="firstCol flex flex-col gap-4">

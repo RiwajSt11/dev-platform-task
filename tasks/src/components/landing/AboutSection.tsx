@@ -25,7 +25,7 @@ function AboutSection() {
     },
   ];
   return (
-    <section className="pl-23.5 pr-15.5 flex flex-col justify-between  h-250 py-45 ">
+    <section className="pl-23.5 pr-15.5 flex flex-col justify-between  h-250 py-80 ">
       {/* top */}
       <div className="texts flex flex-col gap-5 justify-center items-center ">
         <p className="font-bold text-[41.5px] text-center text-[#000000BF] leading-13 ">
@@ -41,7 +41,7 @@ function AboutSection() {
       </div>
 
       {/* bottom cards */}
-      <div className=" h-92.5 flex flex-row justify-between items-center">
+      <div className=" h-92.5 flex flex-row justify-between items-center mt-20">
         {cardInfo.map((card, index) => (
           <div
             key={index}

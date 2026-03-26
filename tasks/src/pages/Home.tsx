@@ -1,4 +1,4 @@
-import { Navbar } from "./Navbar";
+import { Navbar } from "../layouts/Navbar";
 import { LevelCardDisplay } from "../components/home/LevelCardDisplay";
 import { LevelCardElDisplay } from "../components/home/LevelCardElDisplay";
 

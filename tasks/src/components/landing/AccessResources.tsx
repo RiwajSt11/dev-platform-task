@@ -5,7 +5,7 @@ import CommunitySupport from "../../assets/landingPage/About3/CoomunitySupport.s
 
 function AccessResources() {
   return (
-    <section className="border border-black pl-23.5 pr-15.5 flex flex-col justify-evenly items-center bg-[#F4F4F480]  pt-16 h-275">
+    <section className="pl-23.5 pr-15.5 flex flex-col justify-evenly items-center bg-[#F4F4F480]  pt-16 h-275 mb-13">
       {/* top */}
       <div className=" flex flex-col gap-7  justify-center items-center ">
         <p className="font-semibold text-[41.5px] text-center ">

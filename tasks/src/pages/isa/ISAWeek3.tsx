@@ -1,6 +1,6 @@
-import { Navbar } from "../Navbar";
+import { Navbar } from "../../layouts/Navbar";
 
-import { WeekBtn } from "../../components/resources/WeekBtn";
+import { WeekBtn } from "../../components/isa/WeekBtn";
 
 export const ISAWeek3 = () => {
   return (

@@ -48,7 +48,7 @@ function ShareContent() {
     },
   ];
   return (
-    <section className="pl-23.5 pr-15.5 flex flex-col justify-between  h-275  ">
+    <section className="pl-23.5 pr-15.5 flex flex-col justify-between h-275 mt-30">
       {/* top */}
       <div className="  flex flex-col gap-7  justify-center items-center ">
         <p className="font-bold text-[41.5px] text-center ">

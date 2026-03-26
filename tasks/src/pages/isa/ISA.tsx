@@ -1,5 +1,5 @@
-import { Navbar } from "../Navbar";
-import { WeekBtn } from "../../components/resources/WeekBtn";
+import { Navbar } from "../../layouts/Navbar";
+import { WeekBtn } from "../../components/isa/WeekBtn";
 import { ISAHero } from "../../components/home/ISAHero";
 
 export const ISA = () => {

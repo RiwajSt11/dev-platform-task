@@ -1,6 +1,6 @@
-import { NavbarForLogin } from "../NavbarForLogin";
 import { RegisterLeft } from "../../components/register/RegisterLeft";
 import { RegisterRight } from "../../components/register/RegisterRight";
+import { NavbarForLogin } from "../../layouts/NavbarForLogin";
 
 export const Register = () => {
   return (

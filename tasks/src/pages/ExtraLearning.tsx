@@ -1,4 +1,4 @@
-import { Navbar } from "./Navbar";
+import { Navbar } from "../layouts/Navbar";
 
 import { ElCardDisplay } from "../components/extraLearning/ElCardDisplay";
 import { HeroSection } from "../components/extraLearning/HeroSection";

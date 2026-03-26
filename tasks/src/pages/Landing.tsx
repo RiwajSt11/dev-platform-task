@@ -24,7 +24,7 @@ function Landing() {
 
           {/* about 3 */}
           <AccessResources />
-
+<hr className="text-black/30"/>
           {/* contact us */}
           <ContactUs />
 
