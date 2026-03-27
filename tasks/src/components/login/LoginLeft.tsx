@@ -3,10 +3,11 @@ import microsoftAuthenticator from "../../assets/loginPage/microsoft-authenticat
 import { EmailLayout } from "../../layouts/EmailLayout";
 import { InputLayoutLogin } from "../../layouts/InputLayoutLogin";
 import { PasswordLayout } from "../../layouts/PasswordLayout";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../../api/authServices";
 
 export const LoginLeft = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -24,7 +25,8 @@ export const LoginLeft = () => {
       console.log(formData);
       const data = await loginUser(formData);
       console.log(data);
-      alert("Login successful");
+      // alert("Login successful");
+      navigate("/home");
     } catch (error: any) {
       console.error(error.response?.data?.message);
     }
@@ -104,7 +106,6 @@ export const LoginLeft = () => {
           </Link>
         </p>
       </div>
-      <p>hello testing</p>
     </div>
   );
 };

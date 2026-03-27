@@ -1,11 +1,10 @@
-import { Navbar } from "../../layouts/Navbar";
+
 import { WeekBtn } from "../../components/isa/WeekBtn";
 import { ISAHero } from "../../components/home/ISAHero";
 
 export const ISA = () => {
   return (
     <>
-      <Navbar />
       <div className="pl-23 pr-24 flex w-screen pt-9 bg-gray-50 ">
         <div className="w-48.25 border-r border-black/20 fixed top-32.25">
           <h1 className="text-2xl font-medium mb-4.5 pl-0.75">All Weeks</h1>

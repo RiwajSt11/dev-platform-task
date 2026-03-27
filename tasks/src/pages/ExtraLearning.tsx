@@ -1,4 +1,4 @@
-import { Navbar } from "../layouts/Navbar";
+
 
 import { ElCardDisplay } from "../components/extraLearning/ElCardDisplay";
 import { HeroSection } from "../components/extraLearning/HeroSection";
@@ -11,7 +11,6 @@ export const ExtraLearning = () => {
   const [search, setSearch] = useState<string>("");
   return (
     <>
-      <Navbar />
       <div className="bg-gray-50 h-full mb-10 pt-23">
         <HeroSection />
         <FilterSection

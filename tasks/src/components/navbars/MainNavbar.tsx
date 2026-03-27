@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import hck_logo from "../assets/landingPage/hck_core_logo.svg";
+import hck_logo from "../../assets/landingPage/hck_core_logo.svg";
 
 interface NavLinkProps {
   isActive: boolean;
 }
 
-export const Navbar = () => {
+export const MainNavbar = () => {
   const navbarActive = ({ isActive }: NavLinkProps) => {
     return `text-[19px] font-medium cursor-pointer ${isActive ? "text-primary" : "text-black"}`;
   };
@@ -21,7 +21,7 @@ export const Navbar = () => {
             />
           </NavLink>
         </div>
-        <div className="flex gap-12.75 justify-center items-center">
+        <div className="flex gap-12.5 justify-center items-center">
           <NavLink to="/home" className={navbarActive}>
             Home
           </NavLink>

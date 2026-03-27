@@ -44,13 +44,13 @@ export const LevelCard = ({
       <div className="flex justify-between items-center mt-6.75">
         <p className="text-black/70 text-md">{module}</p>
         <div>
-          <Link
-            to="/"
-            className="flex items-center justify-center text-primary gap-2 text-[13px] font-semibold tracking-wide"
+          <button
+            
+            className="flex items-center justify-center text-primary gap-2 text-[13px] font-semibold tracking-wide cursor-pointer"
           >
             <span>Explore</span>
             <img src={arrow} alt="arrow" className="w-4 h-4" />
-          </Link>
+          </button>
         </div>
       </div>
     </Link>
@@ -94,13 +94,12 @@ export const ExtraLearningsCard = ({
       <div className="flex justify-between items-center mt-6.75">
         <p className="text-black/70 text-sm">Computer Science</p>
         <div>
-          <Link
-            to="/hello"
-            className="flex items-center justify-center text-primary gap-2 text-[13px] font-semibold tracking-wide"
+          <button
+            className="flex items-center justify-center text-primary gap-2 text-[13px] font-semibold tracking-wide cursor-pointer"
           >
             <span>Explore</span>
             <img src={arrow} alt="arrow" className="w-4 h-4" />
-          </Link>
+          </button>
         </div>
       </div>
     </Link>

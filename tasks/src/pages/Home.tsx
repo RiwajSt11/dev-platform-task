@@ -1,11 +1,10 @@
-import { Navbar } from "../layouts/Navbar";
+
 import { LevelCardDisplay } from "../components/home/LevelCardDisplay";
 import { LevelCardElDisplay } from "../components/home/LevelCardElDisplay";
 
 export const Home = () => {
   return (
     <>
-      <Navbar />
       <div className="bg-gray-50 h-full px-24.25 pr-27 mb-12 pt-23">
         <div className="flex flex-col justify-center items-center pt-12.25 pl-1">
           <h1 className="text-[38.5px] tracking-wider font-extralight">

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import hck_logo from "../assets/landingPage/hck_core_logo.svg";
+import hck_logo from "../../assets/landingPage/hck_core_logo.svg";
 
-export const NavbarForLogin = () => {
+export const AuthNavbar = () => {
   return (
     <>
       <div className="border-b-[0.7px] border-[#6868681d] flex items-center justify-between py-3.25 pl-23.5 pr-24">

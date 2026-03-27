@@ -7,18 +7,21 @@ export const LevelCardElDisplay = () => {
       title: "React.js",
       description:
         "Build dynamic user interfaces using resuable components, state management, and modern frontend architecture with React.",
+        contributor:"Student"
     },
     {
       faculty: "Big Data",
       title: "Apache Spark",
       description:
         "A fast, unified analytics engine for large-scale data processing with built-in modules for streaming, SQL, machine learning, and graph...",
+        contributor:"Student"
     },
     {
       faculty: "Web Development",
       title: "Express.js",
       description:
         "Develop scalable backend APIs and server-side logic using minimal and flexible Node.js-powered Express framweork.",
+        contributor:"Student"
     },
   ];
   return (
@@ -28,6 +31,7 @@ export const LevelCardElDisplay = () => {
           faculty={card.faculty}
           title={card.title}
           description={card.description}
+          contributor={card.contributor}
           key={index}
         />
       ))}
