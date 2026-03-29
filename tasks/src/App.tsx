@@ -11,6 +11,7 @@ import { SubmitResource } from "./pages/SubmitResource";
 import { Profile } from "./pages/Profile";
 import { AuthLayout } from "./layouts/AuthLayout";
 import { MainLayout } from "./layouts/MainLayout";
+import { ProtectedRoute } from "./routes/ProtectedRoute";
 function App() {
   return (
     <>
@@ -21,23 +22,25 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </Route>
-          <Route element={<MainLayout />}>
-            <Route path="/home" element={<Home />} />
-            <Route
-              path="/home/internet-software-architecture"
-              element={<ISA />}
-            />
-            <Route
-              path="/home/internet-software-architecture/week2"
-              element={<ISAWeek2 />}
-            />
-            <Route
-              path="/home/internet-software-architecture/week3"
-              element={<ISAWeek3 />}
-            />
-            <Route path="/extra-learning" element={<ExtraLearning />} />
-            <Route path="/submit-resource" element={<SubmitResource />} />
-            <Route path="/profile" element={<Profile />} />
+          <Route element={<ProtectedRoute />}>
+            <Route element={<MainLayout />}>
+              <Route path="/home" element={<Home />} />
+              <Route
+                path="/home/internet-software-architecture"
+                element={<ISA />}
+              />
+              <Route
+                path="/home/internet-software-architecture/week2"
+                element={<ISAWeek2 />}
+              />
+              <Route
+                path="/home/internet-software-architecture/week3"
+                element={<ISAWeek3 />}
+              />
+              <Route path="/extra-learning" element={<ExtraLearning />} />
+              <Route path="/submit-resource" element={<SubmitResource />} />
+              <Route path="/profile" element={<Profile />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

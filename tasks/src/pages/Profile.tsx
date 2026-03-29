@@ -66,7 +66,7 @@ export const Profile = () => {
                 <img src={profile} alt="profile-img" className="w-9.5 h-9.5" />
                 <div className="flex flex-col gap-1">
                   <h2 className="text-[15px] text-black/50">Name</h2>
-                  <h2 className="text-[17px]">Ram Shrestha</h2>
+                  <h2 className="text-[17.75px]">Ram Shrestha</h2>
                 </div>
               </div>
               <div className="flex gap-4.5 items-center">

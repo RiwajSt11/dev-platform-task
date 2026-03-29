@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { InputLayoutRegister } from "../../layouts/InputLayoutRegister";
 import { EmailLayout } from "../../layouts/EmailLayout";
 import { PasswordLayout } from "../../layouts/PasswordLayout";
@@ -6,6 +6,7 @@ import { useState } from "react";
 import { registerUser } from "../../api/authServices";
 
 export const RegisterLeft = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -34,7 +35,8 @@ export const RegisterLeft = () => {
         lastName,
       } as any);
       console.log(data);
-      alert("Registered successfully");
+      navigate("/home")
+      
     } catch (error: any) {
       console.error(error.response?.data?.message || "Something went wrong");
     }

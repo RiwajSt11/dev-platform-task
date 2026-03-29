@@ -13,10 +13,21 @@ export interface LoginData {
 }
 
 export const registerUser = async (userData: RegisterData) => {
-  const response = await api.post("register", userData);
+  const response = await api.post("auth/register", userData);
   return response;
 };
 export const loginUser = async (userData: LoginData) => {
-  const response = await api.post("login", userData);
+  const response = await api.post("auth/login", userData);
   return response;
 };
+
+export const checkAuth = async()=>{
+    try{
+        const res=await api.get("user/profile")
+        console.log("AUTH SUCCESS", res);
+        return true;
+    }catch(err){
+      console.log("AUTH SUCCESS", err);
+        return false
+    }
+}
